@@ -1,0 +1,501 @@
+/* 
+==============================================
+CONTENT:	Project Name Here
+AUTHOR:		Your Name Here
+==============================================
+
+TABLE OF CONTENTS:
+
+1. Main Layout
+2. Content
+
+==============================================
+*/
+/* 1. Main Layout ================================= */
+* {
+  box-sizing: border-box; }
+
+html,body {
+  background: #fff;
+  width: 100%;
+  height: 100%;
+}
+/*@font-face {
+  font-family: 'posterBodoni';
+  src: url('fonts/posterbodoni-webfont.woff');
+  src: url('fonts/posterBodoni.ttf') format('truetype');
+  src: local('posterBodoni');
+}
+
+@font-face {
+  font-family: 'Bodoni';
+  src: url('fonts/bodoni.eot');
+  src: url('fonts/bodoni.ttf') format('truetype');
+}*/
+
+
+
+
+/* 2. Content ================================= */
+
+
+
+.arrow {
+  width: 12%;
+  z-index: 4;
+  top: 13.5%;
+  left: 79%;
+  position: absolute;
+  animation-name: arrow;
+  animation-duration: 3s;
+  animation-timing-function: ease-in;
+
+}
+
+
+.circle-blue {
+  height: 30%;
+  width: 42.704626%;
+  background-color: #0151e3;
+  border-radius: 50%;
+  position: absolute;
+  left: 35%;
+  opacity: .9;
+  animation-name: blueCircle;
+  animation-duration: 3s;
+  animation-timing-function: ease;
+  animation-delay: 3s;
+  transform-origin: bottom;
+}
+
+.circle-black {
+  height: 23.125%;
+  width: 32.918149%;
+  border-style: solid;
+  border-width: 20px;
+  border-color: #2a2c2b;
+  border-radius: 50%;
+  position: absolute;
+  left: 63%;
+  top: 4%;
+  animation-name: topCircle;
+  animation-duration: 3s;
+  animation-timing-function: ease;
+/*  animation-iteration-count: infinite;*/
+}
+
+.circle-one {
+  height: 11%;
+  width: 15.25%;
+  background-color: #2a2c2b;
+  border-radius: 50%;
+  position: absolute;
+  top: 74%;
+  left: 61%;
+  animation-name: circleOne;
+  animation-duration: 3s;
+  animation-delay: 5.4s;
+  animation-timing-function: linear;
+  
+}
+
+.circle-two {
+  height: 11%;
+  width: 15.25%;
+  background-color: #2a2c2b;
+  border-radius: 50%;
+  position: absolute;
+  top: 74%;
+  left: 80%;
+  animation-name: circleTwo;
+  animation-duration: 3s;
+  animation-delay: 5.2s;
+  animation-timing-function: linear;
+}
+
+
+.rectangle-one {
+  height: 85%;
+  width: 4%;
+  background: #2a2c2b;
+  left: 4%;
+  position: absolute;
+  z-index: 2;
+  animation-name: rectangleOne;
+  animation-duration: 1s;
+  animation-timing-function: ease-in-out;
+}
+
+.rectangle-two {
+  height: 23.125%;
+  width: 1%;
+  background: #2a2c2b;
+  top: 4%;
+  left: 61%;
+  position: absolute;
+}
+
+
+.rectangle-three {
+  height: 53%;
+  width: 1%;
+  background: #2a2c2b;
+  top: 4%;
+  left: 97%;
+  position: absolute;
+}
+
+.rectangle-four {
+  height: 2.8%;
+  width: 80%;
+  background: #2a2c2b;
+  top: 44.6%;
+  position: absolute;
+  z-index: 2;
+  animation-name: rectangleFour;
+  animation-duration: 1s;
+  animation-timing-function: ease-in-out;
+}
+
+.rectangle-five {
+  height: 40%;
+  width: 6%;
+  background: #2a2c2b;
+  top: 45%;
+  left: 38%;
+  position: absolute;
+  z-index: 2;
+  animation-name: rectangleFive;
+  animation-duration: 1s;
+  animation-timing-function: ease-in-out;
+}
+
+.rectangle-six {
+  height: 18%;
+  width: 1%;
+  background: #2a2c2b;
+  top: 39%;
+  left: 61%;
+  position: absolute;
+  z-index: 2;
+}
+
+.square-red {
+  height: 10%;
+  width: 14.234875%;
+  background: #d54018;
+  left: 15%;
+  position: absolute;
+  animation-name: squareRed;
+  animation-duration: 2s;
+  animation-timing-function: ease;
+  animation-delay: 3.5s;
+}
+
+.kandinsky {
+  width: 48%;
+  z-index: 4;
+  top: 38.3%;
+  left: 11%;
+  position: absolute;
+}
+
+.svizzere {
+  width: 29%;
+  z-index: 4;
+  top: 25.5%;
+  left: 54.5%;
+  position: absolute;
+    transform: rotate(270deg);
+  transform-origin: left top 0;
+  animation-name: svizzere;
+  animation-duration: 3s;
+  animation-timing-function: ease-in-out;
+  animation-delay: 3s;
+}
+
+.collezioni {
+  width: 34%;
+  z-index: 4;
+  top: 56%;
+  left: 91%;
+  position: absolute;
+    transform: rotate(270deg);
+  transform-origin: left top 0;
+}
+
+
+.trapezoid-yellow {
+  opacity: .8;
+  height: 59%;
+  width: 80%;
+  top: 26%;
+  left: 1%;
+  position: absolute;
+  background: #fbd800;
+  -webkit-clip-path: polygon(0 28%, 57% 0, 100% 8%, 29% 100%);
+  clip-path: polygon(0 28%, 57% 0, 100% 8%, 29% 100%);
+  z-index: 1;
+  animation-name: yellowTrap;
+  animation-duration: 2s;
+  animation-timing-function: ease-in-out;
+  animation-delay: 4.5s;
+}
+
+.green-rectangle {
+  height: 10%;
+  width: 50%;
+  background: #5ca995;
+  top: 61%;
+  left: 50%;
+  position: absolute;
+  animation-name: greenRect;
+  animation-duration: 2s;
+  animation-timing-function: ease-in-out;
+  animation-delay: 5s;
+
+}
+
+
+@media screen and (min-width: 0px){
+
+.poster-container {
+  background: #F3F4F8;
+  height: 500px;
+  width: 363px;
+  position: absolute;
+  overflow: hidden;
+}
+
+}
+
+
+/* MEDIUM  LAYOUT ONE */
+
+
+@media screen and (min-width: 767px) {
+
+.poster-container {
+  background: #F3F4F8;
+  height: 765px;
+  width: 540px;
+  overflow: hidden;
+}
+
+}
+
+
+/* LARGE  LAYOUT ONE */
+
+@media screen and (min-width: 1024px) {
+
+  .poster-container {
+  background: #F3F4F8;
+  height: 1000px;
+  width: 702px;
+  overflow: hidden;
+}
+
+}
+
+
+
+
+@keyframes topCircle {
+  from {
+    transform: scale(6);
+  }
+  50% {
+    transform: scale(.55);
+  }
+  to{
+    transform: scale(1);
+  }
+  }
+
+
+@keyframes svizzere {
+  from {
+    transform: rotate(270deg);
+  }
+  to {
+    transform: rotate(-90deg);
+  }
+}
+
+
+@keyframes blueCircle {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(-360deg);
+  }
+
+/*   0%{
+    left: 35%;
+   }
+
+  50%{
+    left: 8%;
+  }
+  100%{
+    left: 35%;
+  }*/
+  }
+
+  @keyframes squareRed {
+   0%{
+    left: 15%;
+    top: 5%;
+    transform: rotate(0deg);
+   }
+
+  20%{
+    left: 10%;
+    top: 10%;
+    transform: rotate(110deg)
+}
+  85%{
+    left: 30%;
+    top: 34%;
+    transform: rotate(-230deg);
+  }
+    100%{
+    left: 15%;
+    top: 0;
+    transform: rotate(10deg);
+   }
+  }
+
+  @keyframes yellowTrap {
+  0%{
+    transform: rotate(1deg);
+  }
+  50% {
+    transform: rotate(100deg);
+  }
+  100%{
+    transform: rotate(1deg);
+  }
+  }
+
+  @keyframes greenRect {
+  from {
+    transform: rotate(0deg);
+  }
+  50%{
+    transform: rotate(95deg);
+  }
+  to{
+    transform: rotate(0deg);
+  }
+  }
+
+
+@keyframes rectangleOne {
+ from {
+   top: 100%;
+ }
+ to{
+   top: 0;
+ }
+ }
+
+
+@keyframes rectangleFour {
+ from {
+    top: 44.6%;
+    left: 100%;
+ }
+ to{
+    top: 44.6%;
+    left: 0%;
+ }
+ }
+
+ @keyframes rectangleFive {
+ from {
+    top: 100%;
+    left: 38%;
+ }
+ to{
+    top: 45%;
+    left: 38%;
+ }
+ }
+
+
+@keyframes circleOne {
+ 0% {
+    top: 74%;
+    left: 61%;
+ }
+ 20%{
+    top: 74%;
+    left: 44%;
+ }
+ 30%{
+  top: 74%;
+  left: 66%;
+ }
+ 47%{
+  top: 74%;
+  left: 44%;
+ }
+ 82%{
+  top: 74%;
+  left: 66%;
+ }
+ 100%{
+  top: 74%;
+  left: 61%;
+ }
+ }
+
+
+@keyframes circleTwo {
+ 0% {
+    top: 74%;
+    left: 80%;
+ }
+ 10% {
+    top: 74%;
+    left: 75%;
+ }
+ 20%{
+    top: 74%;
+    left: 85%;
+ }
+ 45% {
+  top: 74%;
+  left: 76%;
+ }
+ 80% {
+  top: 74%;
+  left: 85%;
+ }
+ 100%{
+  top: 74%;
+  left: 80%;
+ }
+ }
+
+ @keyframes arrow {
+  0% {
+    top: 13.5%;
+    left: 100%;
+ }
+ 30%{
+    top: 13.5%;
+    left: 100%;
+ }
+  50%{
+    top: 13.5%;
+    left: 100%;
+ }
+  100% {
+    top: 13.5%;
+    left: 78%;
+ }
+ }
